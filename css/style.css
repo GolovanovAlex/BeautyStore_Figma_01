@@ -8,8 +8,7 @@ body {
 
 .wrapper {
   max-width: 1110px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 15px 0px 15px;
   margin: 0 auto;
 }
 
@@ -17,19 +16,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  padding: 4px 0px;
+  margin-bottom: 4px;
 }
 .nav li {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0px 15px 10px 15px;
 }
 .nav a {
   text-decoration: none;
   color: #333333;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.nav a:hover {
+  color: #66c056;
 }
 
 .header-logo {
@@ -42,36 +48,44 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0px;
+  padding: 15px 0px 12px 0px;
 }
 .header-logo__image {
   display: block;
   width: 80px;
   height: 80px;
   background-image: url(../img/logo/logo.svg);
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .header-logo__text {
-  color: #66c056;
-  font-size: 36px;
-  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #66c056;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 4px;
 }
 .header-logo__info {
   font-size: 16px;
 }
 
+.header-top {
+  padding-top: 4px;
+}
+
 .header-bottom {
-  padding: 15px 0;
+  padding: 20px 0px 17px 0px;
 }
 .header-bottom .nav {
   font-size: 16px;
   margin: 0px;
+}
+.header-bottom .nav li {
+  margin: 0px 20px 10px 20px;
 }
 
 button {
@@ -79,8 +93,8 @@ button {
   border-radius: 20px;
   background-color: transparent;
   border: 2px solid #66c056;
-  padding: 10px 15px;
-  margin-left: 45px;
+  padding: 10px 25px;
+  margin-left: 35px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   cursor: pointer;
@@ -141,13 +155,14 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 159px;
+  padding-bottom: 206px;
   color: #fff;
 }
 .banner p {
-  margin-bottom: 50px;
   max-width: 315px;
+  margin-bottom: 57px;
+  line-height: 1.5;
 }
 
 .banner__btn {
@@ -156,7 +171,7 @@ hr {
   border-radius: 20px;
   background-color: transparent;
   border: 2px solid #fff;
-  padding: 10px 15px;
+  padding: 10px 48px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   cursor: pointer;
@@ -169,6 +184,7 @@ hr {
 .title__h1 {
   font-size: 48px;
   font-weight: 700;
+  margin-bottom: 38px;
 }
 .title__h2 {
   font-size: 24px;
@@ -185,7 +201,7 @@ hr {
   display: grid;
   -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0 30px;
+  grid-gap: 20px 30px;
 }
 
 .grid-item__title {
@@ -225,7 +241,35 @@ hr {
   text-align: center;
 }
 .grid-item__catalog .bg-white {
-  padding: 15px 20px;
+  padding: 24px 30px 34px 30px;
+}
+
+.catalog {
+  padding: 60px 0px 133px 0px;
+}
+.catalog__title {
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+.catalog__thumb {
+  margin-bottom: 14px;
+}
+.catalog__price {
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 14px 0px 24px 0px;
+}
+.catalog__btn {
+  border-radius: 30px;
+  background-color: #66c056;
+  border: 2px solid #66c056;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 41px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .social-list {
@@ -263,22 +307,6 @@ hr {
   background-image: url(../img/logo/instagramicon.svg);
 }
 
-.catalog__price {
-  font-size: 21px;
-  font-weight: 500;
-}
-.catalog__btn {
-  border-radius: 20px;
-  background-color: #66c056;
-  border: 2px solid #66c056;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
 .footer-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,4 +339,8 @@ hr {
 .footer-bottom a {
   color: #828282;
   text-decoration: none;
+}
+
+.none {
+  height: 500px;
 }

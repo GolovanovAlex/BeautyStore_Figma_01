@@ -1,9 +1,9 @@
-// ---- Colors ---- //
+// ---- ---- Colors ---- ---- //
 $Colorbg: #efefef;
 $Colortext: #333333;
 $Colortitle: #fff;
 $Colorlogo: #66c056;
-// ----Font ---- //
+// ---- ---- Font ---- ---- //
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 // ---- ---- ---- ---- ---- //
@@ -16,23 +16,27 @@ body {
 
 .wrapper {
   max-width: 1110px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 15px 0px 15px;
   margin: 0 auto;
 }
-
 .nav {
   display: flex;
-  list-style-type: none;
   justify-content: center;
-  padding-left: 10px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 4px 0px;
+  margin-bottom: 4px;
   li {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0px 15px 10px 15px;
   }
   a {
     text-decoration: none;
     color: $Colortext;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: $Colorlogo;
+    }
   }
 }
 
@@ -40,32 +44,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 15px 0px 12px 0px;
 
   &__image {
     display: block;
     width: 80px;
     height: 80px;
     background-image: url(../img/logo/logo.svg);
-    margin-right: 10px;
+    margin-right: 20px;
   }
   &__text {
+    display: flex;
+    align-items: center;
     color: $Colorlogo;
     font-size: 36px;
     font-weight: 700;
-    display: flex;
-    align-items: center;
+    letter-spacing: 4px;
   }
   &__info {
     font-size: 16px;
   }
 }
-
+.header-top {
+  padding-top: 4px;
+}
 .header-bottom {
-  padding: 15px 0;
+  padding: 20px 0px 17px 0px;
   .nav {
     font-size: 16px;
     margin: 0px;
+    li {
+      margin: 0px 20px 10px 20px;
+    }
   }
 }
 
@@ -74,8 +84,8 @@ button {
   border-radius: 20px;
   background-color: transparent;
   border: 2px solid $Colorlogo;
-  padding: 10px 15px;
-  margin-left: 45px;
+  padding: 10px 25px;
+  margin-left: 35px;
   transition: 0.3s ease;
   cursor: pointer;
 
@@ -125,12 +135,13 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 159px;
+  padding-bottom: 206px;
   color: $Colortitle;
   p {
-    margin-bottom: 50px;
     max-width: 315px;
+    margin-bottom: 57px;
+    line-height: 1.5;
   }
 }
 .banner__btn {
@@ -139,13 +150,13 @@ hr {
   border-radius: 20px;
   background-color: transparent;
   border: 2px solid $Colortitle;
-  padding: 10px 15px;
+  padding: 10px 48px;
   transition: 0.3s ease;
   cursor: pointer;
 
   &:hover {
     background-color: $Colortitle;
-    color: #333333;
+    color: $Colortext;
   }
 }
 
@@ -153,6 +164,7 @@ hr {
   &__h1 {
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 38px;
   }
   &__h2 {
     font-size: 24px;
@@ -168,7 +180,7 @@ hr {
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0 30px;
+  grid-gap: 20px 30px;
 }
 .grid-item {
   &__title {
@@ -192,8 +204,34 @@ hr {
   &__catalog {
     text-align: center;
     .bg-white {
-      padding: 15px 20px;
+      padding: 24px 30px 34px 30px;
     }
+  }
+}
+.catalog {
+  padding: 60px 0px 133px 0px;
+  &__title {
+    line-height: 1.5;
+    margin-bottom: 0px;
+  }
+  &__thumb {
+    margin-bottom: 14px;
+  }
+  &__price {
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 14px 0px 24px 0px;
+  }
+  &__btn {
+    border-radius: 30px;
+    background-color: $Colorlogo;
+    border: 2px solid $Colorlogo;
+    color: $Colortitle;
+    text-decoration: none;
+    padding: 7px 41px;
+    transition: 0.3s ease;
+    cursor: pointer;
   }
 }
 .social-list {
@@ -228,22 +266,6 @@ hr {
     background-image: url(../img/logo/instagramicon.svg);
   }
 }
-.catalog {
-  &__price {
-    font-size: 21px;
-    font-weight: 500;
-  }
-  &__btn {
-    border-radius: 20px;
-    background-color: $Colorlogo;
-    border: 2px solid $Colorlogo;
-    color: $Colortitle;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: 0.3s ease;
-    cursor: pointer;
-  }
-}
 
 .footer-top {
   display: flex;
@@ -268,4 +290,7 @@ hr {
     color: #828282;
     text-decoration: none;
   }
+}
+.none {
+  height: 500px;
 }
