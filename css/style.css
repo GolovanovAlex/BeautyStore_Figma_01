@@ -116,7 +116,7 @@ hr {
 .bg-green {
   background-color: #66c056;
   color: #fff;
-  padding: 15px 30px;
+  padding: 34px 41px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,26 +127,35 @@ hr {
       -ms-flex-align: center;
           align-items: center;
 }
+.bg-green p {
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
 .bg-green input {
   font-size: 14px;
   border: 1px solid #fff;
   border-radius: 20px;
   padding: 10px 15px;
+  width: 100%;
+  max-width: 225px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .bg-green .banner__btn {
   display: block;
   text-align: center;
-  max-width: 150px;
+  max-width: 167px;
+  padding: 9px 0px;
 }
 .bg-green__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
+      -ms-flex: 0 0 55%;
+          flex: 0 0 55%;
 }
 .bg-green__img {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
   text-align: center;
 }
 
@@ -194,6 +203,7 @@ hr {
   font-size: 18px;
   font-weight: 700;
   margin-top: 0px;
+  margin-bottom: 16px;
 }
 
 .grid {
@@ -228,6 +238,7 @@ hr {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  margin-top: 80px;
 }
 .grid-item__right {
   -ms-grid-column: 3;
@@ -236,6 +247,7 @@ hr {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  margin-top: 80px;
 }
 .grid-item__catalog {
   text-align: center;
@@ -288,8 +300,8 @@ hr {
 .social-list a {
   border: 2px solid #66c056;
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -317,10 +329,15 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0px 23px 0px;
 }
 .footer-top__info {
   font-size: 16px;
   margin-left: 35px;
+}
+.footer-top span:first-child {
+  font-size: 14px;
+  margin-right: 103px;
 }
 
 .footer-bottom {
@@ -330,8 +347,9 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 12px;
   color: #828282;
-  padding: 15px 0;
+  padding: 29px 0;
 }
 .footer-bottom p {
   margin: 0;
@@ -339,8 +357,4 @@ hr {
 .footer-bottom a {
   color: #828282;
   text-decoration: none;
-}
-
-.none {
-  height: 500px;
 }

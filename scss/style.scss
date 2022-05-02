@@ -106,26 +106,34 @@ hr {
 .bg-green {
   background-color: $Colorlogo;
   color: $Colortitle;
-  padding: 15px 30px;
+  padding: 34px 41px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
   input {
     font-size: 14px;
     border: 1px solid $Colortitle;
     border-radius: 20px;
     padding: 10px 15px;
+    width: 100%;
+    max-width: 225px;
+    box-sizing: border-box;
   }
   .banner__btn {
     display: block;
     text-align: center;
-    max-width: 150px;
+    max-width: 167px;
+    padding: 9px 0px;
   }
   &__item {
-    flex: 0 0 60%;
+    flex: 0 0 55%;
   }
   &__img {
-    flex: 0 0 40%;
+    flex: 0 0 30%;
     text-align: center;
   }
 }
@@ -174,6 +182,7 @@ hr {
     font-size: 18px;
     font-weight: 700;
     margin-top: 0px;
+    margin-bottom: 16px;
   }
 }
 
@@ -195,11 +204,13 @@ hr {
   &__left {
     grid-column: 1/3;
     grid-row: 3/4;
+    margin-top: 80px;
   }
 
   &__right {
     grid-column: 3/5;
     grid-row: 3/4;
+    margin-top: 80px;
   }
   &__catalog {
     text-align: center;
@@ -246,8 +257,8 @@ hr {
   a {
     border: 2px solid $Colorlogo;
     display: block;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -271,17 +282,23 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0px 23px 0px;
 
   &__info {
     font-size: 16px;
     margin-left: 35px;
   }
+  span:first-child {
+    font-size: 14px;
+    margin-right: 103px;
+  }
 }
 .footer-bottom {
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
   color: #828282;
-  padding: 15px 0;
+  padding: 29px 0;
 
   p {
     margin: 0;
@@ -290,7 +307,4 @@ hr {
     color: #828282;
     text-decoration: none;
   }
-}
-.none {
-  height: 500px;
 }
